@@ -1,0 +1,160 @@
+.cart-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.cart-page h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.cart-page h2 {
+  color: #64748b;
+}
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.cart-item {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+/* .cart-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+} */
+
+
+.cart-item img {
+  width: 220px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.cart-item {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.cart-item h3 {
+  margin: 15px 0;
+  color: #1f2937;
+}
+
+.cart-item p {
+  margin: 8px 0;
+  color: #374151;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cart-page {
+    padding: 25px 15px;
+  }
+
+  .cart-page h1 {
+    font-size: 28px;
+  }
+
+  .cart-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.cart-page {
+  padding: 30px;
+}
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.cart-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+}
+
+.cart-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.cart-item h3 {
+  margin: 10px 0;
+}
+
+.cart-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.cart-quantity button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.cart-quantity span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.remove-btn {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .cart-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.unavailable-text {
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+}

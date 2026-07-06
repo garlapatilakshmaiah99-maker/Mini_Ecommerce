@@ -1,0 +1,135 @@
+.products-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.products-page h1 {
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.products-page h2 {
+  color: #64748b;
+  margin-top: 30px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.product-card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+.product-card p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #374151;
+}
+
+.product-card button {
+  margin-top: 12px;
+  padding: 11px 18px;
+  width: 100%;
+  background: #f59e0b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #d97706;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .products-page {
+    padding: 30px 25px;
+  }
+
+  .products-page h1 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .products-page {
+    padding: 25px 15px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .product-image {
+    height: 190px;
+  }
+
+  .products-page h1 {
+    font-size: 26px;
+  }
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.qty-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #f59e0b;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qty-btn:hover {
+  background: #ea580c;
+}
+
+.qty-number {
+  min-width: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
